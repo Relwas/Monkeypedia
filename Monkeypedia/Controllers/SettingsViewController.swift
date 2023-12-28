@@ -11,6 +11,7 @@ class SettingsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = UIColor(named: "fon")
 
         // Do any additional setup after loading the view.
     }
