@@ -142,7 +142,7 @@ class ResultViewController: UIViewController {
     }
 
     private func setupAudioPlayer() {
-        if let soundURL = Bundle.main.url(forResource: "resultSound", withExtension: "mp3") {
+        if let soundURL = Bundle.main.url(forResource: "ResultSound", withExtension: "mp3") {
             do {
                 audioPlayer = try AVAudioPlayer(contentsOf: soundURL)
                 audioPlayer?.prepareToPlay()
