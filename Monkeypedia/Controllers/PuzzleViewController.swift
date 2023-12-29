@@ -34,12 +34,6 @@ class PuzzleViewController: UIViewController, UICollectionViewDataSource, UIColl
         layout.minimumLineSpacing = 5
         layout.itemSize = CGSize(width: cellSize, height: cellSize)
 
-        let puzzleBackground = UIView()
-        puzzleBackground.backgroundColor = UIColor(named: "buttonColor1")
-        puzzleBackground.layer.cornerRadius = 15
-        puzzleBackground.clipsToBounds = true
-        view.addSubview(puzzleBackground)
-
         // Create a collection view
         collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.dataSource = self
@@ -48,10 +42,10 @@ class PuzzleViewController: UIViewController, UICollectionViewDataSource, UIColl
         collectionView.showsVerticalScrollIndicator = false
         collectionView.register(PuzzleCell.self, forCellWithReuseIdentifier: PuzzleCell.identifier)
         collectionView.backgroundColor = .clear
-        puzzleBackground.addSubview(collectionView)
+        view.addSubview(collectionView)
 
         let totalGridHeight = CGFloat(gridSize) * cellSize + CGFloat(gridSize - 1) * 5
-        let backgroundHeight = totalGridHeight + 15
+        let backgroundHeight = totalGridHeight
 
         timerLabel = UILabel()
         timerLabel.textColor = UIColor(named: "labelColor1")
@@ -60,23 +54,18 @@ class PuzzleViewController: UIViewController, UICollectionViewDataSource, UIColl
         timerLabel.text = "Time: \(timeRemaining) s"
         view.addSubview(timerLabel)
         timerLabel.translatesAutoresizingMaskIntoConstraints = false
-        puzzleBackground.translatesAutoresizingMaskIntoConstraints = false
 
         NSLayoutConstraint.activate([
-            puzzleBackground.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10),
-            puzzleBackground.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -10),
-            puzzleBackground.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-            puzzleBackground.heightAnchor.constraint(equalToConstant: backgroundHeight),
-            timerLabel.bottomAnchor.constraint(equalTo: puzzleBackground.topAnchor, constant: -20),
+            timerLabel.bottomAnchor.constraint(equalTo: collectionView.topAnchor, constant: -20),
             timerLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor)
         ])
 
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            collectionView.centerXAnchor.constraint(equalTo: puzzleBackground.centerXAnchor),
-            collectionView.centerYAnchor.constraint(equalTo: puzzleBackground.centerYAnchor),
-            collectionView.widthAnchor.constraint(equalTo: puzzleBackground.widthAnchor, constant: -15),
-            collectionView.heightAnchor.constraint(equalTo: puzzleBackground.heightAnchor, constant: -15)
+            collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10),
+            collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -10),
+            collectionView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            collectionView.heightAnchor.constraint(equalToConstant: backgroundHeight),
         ])
 
         collectionView.layer.cornerRadius = 10

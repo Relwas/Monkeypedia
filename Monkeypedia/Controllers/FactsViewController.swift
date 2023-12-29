@@ -96,15 +96,10 @@ private struct Constants {
             Monkey Facts:
             
              *Monkey is a familiar name for a group of primate mammals
-            
              *They live both on the ground and in the trees
-            
              *Most monkeys have tails
-            
              *Apes are not monkeys
-            
              *Groups of monkeys are known as a mission, tribe, or troop
-            
              *They have to stay away from animals like big snake, crocodiles, and leopards.
             
             """
@@ -112,19 +107,12 @@ private struct Constants {
     Fun facts about Monkeys:
 
     *Just like young children, monkeys have a high IQ
-
-    *Illnesses can be spread to people by monkeys
-
+*Illnesses can be spread to people by monkeys
     *The owl monkey's more enduring moniker is the "night monkey"
-
     *Monkeys and apes are not the same but are related
-
-    *To interact with one another, monkeys engage in grooming rituals
-
+*To interact with one another, monkeys engage in grooming rituals
     *Monkeys as pets are popular exotic animals
-
     *All monkeys have opposable thumbs
-     
     *The common cold does not affect monkeys.
 """
 }
