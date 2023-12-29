@@ -23,7 +23,7 @@ class FavoriteViewController: UIViewController, UICollectionViewDelegate, UIColl
         label.text = "No favorites yet."
         label.textAlignment = .center
         label.textColor = UIColor(named: "LabelColor1")
-        label.font = UIFont.systemFont(ofSize: 20, weight: .bold)
+        label.font = UIFont.systemFont(ofSize: 23, weight: .bold)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -71,7 +71,6 @@ class FavoriteViewController: UIViewController, UICollectionViewDelegate, UIColl
     }
 
     func removeImageFromFavorites(_ image: UIImage) {
-        // ... (unchanged code)
         updateCollectionView()
     }
 

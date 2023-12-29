@@ -20,9 +20,6 @@ class BreedsViewController: UIViewController, UICollectionViewDelegate, UICollec
         view.backgroundColor = UIColor(named: "fon")
 
         // Inside viewDidLoad
-        let sortedBreedNames = breedNames.sorted(by: { $0.localizedCaseInsensitiveCompare($1) == ComparisonResult.orderedAscending })
-        print("Sorted Breed Names:", sortedBreedNames)
-
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
         layout.minimumLineSpacing = 20
@@ -114,7 +111,7 @@ class BreedCollectionViewCell: UICollectionViewCell {
         nameLabel.numberOfLines = 0
         nameLabel.textColor = .white
         nameLabel.backgroundColor = UIColor.black.withAlphaComponent(0.3)
-        nameLabel.font = UIFont.systemFont(ofSize: 23)
+        nameLabel.font = UIFont(name: "AvenirNext-Medium", size: 18)
         imageView.addSubview(nameLabel)
 
         imageView.contentMode = .scaleAspectFill

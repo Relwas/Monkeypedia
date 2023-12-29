@@ -10,13 +10,13 @@ class TabbarViewController: UITabBarController, UITabBarControllerDelegate {
         tabBar.isTranslucent = false
 
         self.delegate = self
-        
+        configureAppearance()
         setupTabs()
         view.backgroundColor = UIColor(named: "fon ")
         tabBar.backgroundColor = UIColor(named: "fon")
         self.tabBar.tintColor = .systemYellow
         self.tabBar.unselectedItemTintColor = .gray
-        
+
         let attributes: [NSAttributedString.Key: Any] = [
                     .font: UIFont(name: "TeluguSangamMN-Bold", size: 20.0) ?? UIFont.systemFont(ofSize: 18.0),
                     .foregroundColor: UIColor(named: "labelColor1") ?? UIColor.black
@@ -31,6 +31,9 @@ class TabbarViewController: UITabBarController, UITabBarControllerDelegate {
                 }
             }
     
+    private func configureAppearance() {
+        UINavigationBar.appearance().tintColor = .gray
+    }
     func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
          if let index = tabBarController.viewControllers?.firstIndex(of: viewController),
              let tabBarItem = tabBar.items?[index].value(forKey: "view") as? UIView {

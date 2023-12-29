@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		92101B342B3E92C80022A77F /* FLAnimatedImage in Frameworks */ = {isa = PBXBuildFile; productRef = 92101B332B3E92C80022A77F /* FLAnimatedImage */; };
+		92101B382B3E9C5B0022A77F /* MonkeyGif.gif in Resources */ = {isa = PBXBuildFile; fileRef = 92101B372B3E9C5B0022A77F /* MonkeyGif.gif */; };
+		92101B3A2B3EA7F30022A77F /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92101B392B3EA7F20022A77F /* ResultViewController.swift */; };
+		92101B3C2B3ED43E0022A77F /* PuzzleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92101B3B2B3ED43E0022A77F /* PuzzleViewController.swift */; };
+		92101B3E2B3ED4520022A77F /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92101B3D2B3ED4520022A77F /* QuizViewController.swift */; };
 		9240590D2B3D97D500142C9E /* BreedsFullViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9240590C2B3D97D500142C9E /* BreedsFullViewController.swift */; };
 		924059112B3DA69100142C9E /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924059102B3DA69100142C9E /* UserDefaultsManager.swift */; };
 		924059152B3DC29F00142C9E /* Breeds in Resources */ = {isa = PBXBuildFile; fileRef = 924059142B3DC29F00142C9E /* Breeds */; };
@@ -23,6 +28,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		92101B372B3E9C5B0022A77F /* MonkeyGif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = MonkeyGif.gif; sourceTree = "<group>"; };
+		92101B392B3EA7F20022A77F /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		92101B3B2B3ED43E0022A77F /* PuzzleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleViewController.swift; sourceTree = "<group>"; };
+		92101B3D2B3ED4520022A77F /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		9240590C2B3D97D500142C9E /* BreedsFullViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsFullViewController.swift; sourceTree = "<group>"; };
 		924059102B3DA69100142C9E /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
 		924059142B3DC29F00142C9E /* Breeds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Breeds; sourceTree = "<group>"; };
@@ -45,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92101B342B3E92C80022A77F /* FLAnimatedImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +85,7 @@
 				925814A72B3C9A8C00C37BF7 /* AppDelegate.swift */,
 				924059142B3DC29F00142C9E /* Breeds */,
 				925814B02B3C9A8E00C37BF7 /* Assets.xcassets */,
+				92101B372B3E9C5B0022A77F /* MonkeyGif.gif */,
 				925814B22B3C9A8E00C37BF7 /* LaunchScreen.storyboard */,
 				925814B52B3C9A8E00C37BF7 /* Info.plist */,
 			);
@@ -98,6 +109,9 @@
 				92FBC7EC2B3DE9C00023D889 /* OneFullImageViewController.swift */,
 				925814BF2B3CA39C00C37BF7 /* FactsViewController.swift */,
 				925814C12B3CA3A700C37BF7 /* GameViewController.swift */,
+				92101B3B2B3ED43E0022A77F /* PuzzleViewController.swift */,
+				92101B3D2B3ED4520022A77F /* QuizViewController.swift */,
+				92101B392B3EA7F20022A77F /* ResultViewController.swift */,
 				925814C52B3CA71E00C37BF7 /* FavoriteViewController.swift */,
 				925814C32B3CA3B400C37BF7 /* SettingsViewController.swift */,
 			);
@@ -120,6 +134,9 @@
 			dependencies = (
 			);
 			name = Monkeypedia;
+			packageProductDependencies = (
+				92101B332B3E92C80022A77F /* FLAnimatedImage */,
+			);
 			productName = Monkeypedia;
 			productReference = 925814A42B3C9A8C00C37BF7 /* Monkeypedia.app */;
 			productType = "com.apple.product-type.application";
@@ -148,6 +165,9 @@
 				Base,
 			);
 			mainGroup = 9258149B2B3C9A8C00C37BF7;
+			packageReferences = (
+				92101B322B3E92C80022A77F /* XCRemoteSwiftPackageReference "FLAnimatedImage" */,
+			);
 			productRefGroup = 925814A52B3C9A8C00C37BF7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -165,6 +185,7 @@
 				924059152B3DC29F00142C9E /* Breeds in Resources */,
 				925814B42B3C9A8E00C37BF7 /* LaunchScreen.storyboard in Resources */,
 				925814B12B3C9A8E00C37BF7 /* Assets.xcassets in Resources */,
+				92101B382B3E9C5B0022A77F /* MonkeyGif.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,8 +204,11 @@
 				925814C62B3CA71E00C37BF7 /* FavoriteViewController.swift in Sources */,
 				924059112B3DA69100142C9E /* UserDefaultsManager.swift in Sources */,
 				925814BE2B3CA35100C37BF7 /* BreedsViewController.swift in Sources */,
+				92101B3E2B3ED4520022A77F /* QuizViewController.swift in Sources */,
 				925814A82B3C9A8C00C37BF7 /* AppDelegate.swift in Sources */,
 				925814C42B3CA3B400C37BF7 /* SettingsViewController.swift in Sources */,
+				92101B3C2B3ED43E0022A77F /* PuzzleViewController.swift in Sources */,
+				92101B3A2B3EA7F30022A77F /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +435,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		92101B322B3E92C80022A77F /* XCRemoteSwiftPackageReference "FLAnimatedImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Flipboard/FLAnimatedImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.17;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		92101B332B3E92C80022A77F /* FLAnimatedImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 92101B322B3E92C80022A77F /* XCRemoteSwiftPackageReference "FLAnimatedImage" */;
+			productName = FLAnimatedImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9258149C2B3C9A8C00C37BF7 /* Project object */;
 }
